@@ -53,7 +53,7 @@ export default function Navbar() {
               onClick={() => setMenu(false)}
               className="mt-0 mb-8 text-3xl cursor-pointer"
             />
-            <ul className="list-none font-bold ">
+            <ul className="list-none flex  flex-col gap-2 font-poppins_normal font-bold ">
               <li>Discover</li>
               <li>How to work </li>
               <li>Marketplace</li>
