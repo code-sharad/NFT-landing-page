@@ -12,7 +12,18 @@ export default function Navbar() {
 
 
   if(isSideMenuOpen){
-   return <div className="lg:invisible flex justify-betweentext-md mx-[10vw]">
+   return <motion.div 
+   initial={{
+    x:0,opacity:0
+   }}
+   animate={{
+    x:0,opacity:1
+    
+   }}
+   transition={{
+    delay:0.1
+   }}
+   className="lg:invisible flex justify-betweentext-md mx-[10vw]">
        <li className="visible  py-16  font-semibold items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
             <img
               className="scale-125"
@@ -27,7 +38,7 @@ export default function Navbar() {
              {/* sidebar mobile menu */}
         <div
           className={clsx(
-            " fixed h-full w-screen lg:hidden bg-black/50  backdrop-blur-sm top-0 -right-56  -translate-x-2 z-40   transition-all ",
+            " fixed h-full w-screen lg:hidden bg-black/50  backdrop-blur-sm top-0 -right-52  -translate-x-2 z-40   transition-all ",
             isSideMenuOpen && "translate-x-0"
           )}
         >
@@ -43,7 +54,7 @@ export default function Navbar() {
             </ul>
             </section>
     </div>
-    </div>
+    </motion.div>
   
 }
 

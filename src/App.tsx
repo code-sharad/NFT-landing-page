@@ -28,7 +28,7 @@ function App() {
           <motion.p 
           initial={{x:-100,opacity:0}}
           animate={{x:0,opacity:1}}
-          className="my-6 text-xl text-gray-400 w-[360px] lg:w-[460px]">
+          className="my-6 pr-1 text-xl text-gray-400 w-[360px] lg:w-[460px]">
             There is enough digital artworks available online to help you put
             together crypto currency website.
           </motion.p>
