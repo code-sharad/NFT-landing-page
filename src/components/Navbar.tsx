@@ -12,8 +12,8 @@ export default function Navbar() {
 
 
   if(isSideMenuOpen){
-   return <div className="lg:invisible flex justify-between   py-6 text-md mx-9">
-       <li className="visible font-bold items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
+   return <div className="lg:invisible flex justify-betweentext-md mx-[10vw]">
+       <li className="visible   py-16  font-semibold items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
             <img
               className="scale-125"
               src={logo}
@@ -55,8 +55,8 @@ export default function Navbar() {
       <div className="flex justify-start  font-poppins_normal  invisible lg:visible ">
         <ul className="list-none flex gap items-center justify-between  lg:gap-10 gap-0 ">
 
-          <li className="visible  py-9  items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex justify-between  w-[87vw] cursor-pointer  gap-2  font-san">
-            <div className="flex items-center gap-2 font-bold">
+          <li className="visible  py-6 items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex justify-between  w-[87vw] cursor-pointer  gap-2  font-san">
+            <div className="flex items-center gap-2 font-semibold">
               <img
               className="scale-125 ml-2"
               src={logo}
