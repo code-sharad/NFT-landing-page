@@ -12,9 +12,9 @@ import { motion } from "framer-motion";
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden lg:overflow-visible">
       <Navbar />
-      <div className="mx-10 lg:mx-0  flex lg:flex-row h-[70vh] lg:w-[100vw] w-[460px] lg:justify-center mt-20 gap-9 items-center ">
+      <div className="mx-10 lg:mx-0  flex lg:flex-row h-[90vh] lg:h-[70vh] lg:w-[100vw] w-[460px] lg:justify-center mt-20 gap-9 items-center ">
         <div className="text-left">
           <motion.div initial={{x:-100,opacity:0}}
           animate={{x:0,opacity:1}} className="text-7xl  lg:text-5xl">
@@ -28,7 +28,7 @@ function App() {
           <motion.p 
           initial={{x:-100,opacity:0}}
           animate={{x:0,opacity:1}}
-          className="my-6 text-xl text-gray-400 w-[460px]">
+          className="my-6 text-xl text-gray-400 w-[360px] lg:w-[460px]">
             There is enough digital artworks available online to help you put
             together crypto currency website.
           </motion.p>
@@ -59,7 +59,7 @@ function App() {
            transition={{
             delay:0.1
            }}
-            className="absolute  lg:visible lg:left-[500px]  lg:bottom-2 lg:rotate-0 -z-10 scale-[60%] "
+            className="relative h-24  lg:visible lg:left-[500px]  lg:bottom-2 lg:rotate-0 -z-10 lg:scale-[60%] "
             src={image2}
           />
         </div>
@@ -74,7 +74,7 @@ function App() {
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1}}
-          className="z-20 italic font-poppins_normal   relative lg:relative lg:-top-32 lg:right-32  top-72 right-96 flex  flex-col  text-xl items-center">
+          className="z-20 italic font-poppins_normal  w-[300px] lg:w-full  relative lg:relative lg:-top-32 lg:right-32  top-72 right-96 flex  flex-col  text-xl items-center">
             <div className="flex gap-0 flex-col lg:flex-row lg:w-full w-[300px] justify-between items-start border-b-2 border-t-2 py-2">
               <span className="text-gray-500 sm:border-b-2 lg:border-b-0 pb-2  flex  justify-start  items-center ">
                 <img
@@ -84,7 +84,7 @@ function App() {
                 />
                 Real Bestia Nft's
               </span>
-              <span className="font-bold flex w-96  items-center">
+              <span className="font-bold border-t-2 flex lg:border-t-0  items-center">
                 <img
                   width={"80"}
                   height="80"
@@ -107,7 +107,8 @@ function App() {
       className="z-10 relative flex ml-9 scale-90 bottom-0 lg:bottom-20">
         <img className="invisible lg:visible absolute left-24 top-14" src={image} />
       </motion.div>
-    </>
+      
+    </div>
   );
 }
 
