@@ -36,10 +36,10 @@ function App() {
           initial={{x:-100,opacity:0}}
           animate={{x:0,opacity:1}}
            className="flex gap-6 font-poppins_bold w-[350px]">
-            <button className="hover:scale-105 transition-all bg-black rounded lg:w-60 lg:h-14 lg:text-xl text-[1.2rem] w-30 h-20  py-2 px-3 text-white">
+            <button className="hover:scale-105 lg:w-[400px] transition-all bg-black rounded lg:h-14 lg:text-xl text-[1.2rem] w-30 h-20  py-2 px-3 text-white">
               Explore Now
             </button>
-            <button className="hover:scale-105 transition-all w-[150px] flex lg:gap-2 px-4 items-center lg:bg-none sm:border-2 sm:border-yellow-400 bg-yellow-300 rounded">
+            <button className="hover:scale-105 transition-all w-[150px] lg:w-[400px] flex lg:gap-2 px-4 items-center lg:bg-none sm:border-2 sm:border-yellow-400 bg-yellow-300 rounded">
               <img
                 className="scale-150"
                 src={play}
