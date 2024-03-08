@@ -1,12 +1,15 @@
+import logo from "../../images/avatar/logo.png"
+import download from "../../images/avatar/download.png"
 export default function Navbar() {
   return (
     <nav className="invisible lg:visible md:visible flex items-center justify-between w-full px-44 py-6 text-md">
       <div className="flex justify-start font-poppins_normal  invisible lg:visible ">
         <ul className="list-none flex gap-10  ">
+
           <li className="font-poppins_bold text-xl flex items-center gap-2  font-san">
             <img
               className="scale-125"
-              src="./images/avatar/logo.png"
+              src={logo}
               height={"40"}
               width={"40"}
               alt=""
@@ -29,7 +32,7 @@ export default function Navbar() {
         </button>
         <img
           className=" scale-150"
-          src="./images/avatar/download.png"
+          src={download}
           height={"40"}
           width={"40"}
           alt=""
