@@ -67,7 +67,7 @@ export default function Navbar() {
             
             className="lg:visible md:visible flex items-center justify-between w-[80vw] mx-[10vw] py-6 text-md">
       <div className="flex justify-start  font-poppins_normal  invisible lg:visible ">
-        <ul className="list-none flex gap items-center justify-between  border-2">
+        <ul className="list-none flex gap items-center justify-between  lg:gap-10 gap-0 ">
 
           <li className="visible  items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
             <img

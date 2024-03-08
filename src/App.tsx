@@ -35,8 +35,8 @@ function App() {
           <motion.div
           initial={{x:-100,opacity:0}}
           animate={{x:0,opacity:1}}
-           className="flex gap-10 font-poppins_bold">
-            <button className="hover:scale-105 transition-all bg-black rounded lg:w-60 lg:h-14 lg:text-xl text-2xl w-60 h-20  py-2 px-3 text-white">
+           className="flex gap-6 font-poppins_bold w-[350px]">
+            <button className="hover:scale-105 transition-all bg-black rounded lg:w-60 lg:h-14 lg:text-xl text-[1.2rem] w-30 h-20  py-2 px-3 text-white">
               Explore Now
             </button>
             <button className="hover:scale-105 transition-all flex lg:gap-2 px-6 items-center lg:bg-none sm:border-2 sm:border-yellow-400 bg-yellow-300 rounded">
@@ -59,7 +59,7 @@ function App() {
            transition={{
             delay:0.1
            }}
-            className="relative h-24  lg:visible lg:left-[500px]  lg:bottom-2 lg:rotate-0 -z-10 lg:scale-[60%] "
+            className="relative h-24  lg:visible lg:left-[400px]  lg:bottom-2 lg:rotate-0 -z-10 lg:scale-125 "
             src={image2}
           />
         </div>
@@ -67,7 +67,7 @@ function App() {
           <motion.img 
           initial={{x:100,opacity:0}}
           animate={{x:0,opacity:1}}
-            className="invisible  scale-100 lg:top-28 lg:h-[1000px] relative -z-20 lg:visible "
+            className="invisible  scale-100 lg:top-20 lg:h-[1000px] relative -z-20 lg:visible "
             src={main_landing}
           />
           <br />
@@ -75,8 +75,8 @@ function App() {
           initial={{opacity:0}}
           animate={{opacity:1}}
           className="z-20 italic font-poppins_normal  w-[300px] lg:w-full  relative lg:relative lg:-top-32 lg:right-32  top-72 right-96 flex  flex-col  text-xl items-center">
-            <div className="flex gap-0 flex-col lg:flex-row lg:w-full w-[300px] justify-between items-start border-b-2 border-t-2 py-2">
-              <span className="text-gray-500 sm:border-b-2 lg:border-b-0 pb-2  flex  justify-start  items-center ">
+            <div className="flex gap-0 flex-col lg:flex-row lg:w-full w-[300px] justify-between items-start border-b-2 border-t-0 py-2">
+              <span className="text-gray-500 lg:border-b-0 pb-2  flex  justify-start  items-center ">
                 <img
                   width={"80"}
                   height="80"
