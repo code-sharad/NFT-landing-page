@@ -10,24 +10,21 @@ import clsx from "clsx";
 export default function Navbar() {
   const [isSideMenuOpen, setMenu] = useState(false);
 
-  if(!isSideMenuOpen){
-    return <nav className="lg:invisible flex justify-between  py-6 text-md mx-9">
-      <li className="visible items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
-            <img
-              className="scale-125"
-              src={logo}
-              height={"40"}
-              width={"40"}
-              alt=""
-            />
-            NFT's{" "}
-          </li>
-      <FiMenu
-              onClick={() => setMenu(true)}
-              className="text-3xl  cursor-pointer lg:hidden"
-            />
-    </nav>
-  }
+  // if(!isSideMenuOpen){
+  //   return <nav className="lg:invisible flex justify-between  py-6 text-md mx-9">
+  //     <li className="visible items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
+  //           <img
+  //             className="scale-125"
+  //             src={logo}
+  //             height={"40"}
+  //             width={"40"}
+  //             alt=""
+  //           />
+  //           NFT's{" "}
+  //         </li>
+     
+  //   </nav>
+  // }
   if(isSideMenuOpen){
    return <div className="lg:invisible flex justify-between  py-6 text-md mx-9">
        <li className="visible items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
@@ -69,10 +66,10 @@ export default function Navbar() {
             animate={{ y: 0,opacity: 1 }}
             
             className="lg:visible md:visible flex items-center justify-between w-[80vw] mx-[10vw] py-6 text-md">
-      <div className="flex justify-start font-poppins_normal  invisible lg:visible ">
-        <ul className="list-none flex gap-10  ">
+      <div className="flex justify-start  font-poppins_normal  invisible lg:visible ">
+        <ul className="list-none flex gap items-center justify-between  border-2">
 
-          <li className="visible items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
+          <li className="visible  items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
             <img
               className="scale-125"
               src={logo}
@@ -82,7 +79,11 @@ export default function Navbar() {
             />
             NFT's{" "}
           </li>
-          <li className="text-gray-500 cursor-pointer">Discover</li>
+           <FiMenu
+              onClick={() => setMenu(true)}
+              className="text-3xl visible absolute right-8  cursor-pointer lg:hidden"
+            />
+          <li className="text-gray-500 cursor-pointer ">Discover</li>
           <li className="text-gray-500 cursor-pointer">How it works</li>
           <li className="font-poppins_bold cursor-pointer">
             Marketplace{" "}
@@ -92,7 +93,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="flex z-10 gap-10">
+      <div className="invisible lg:visible flex z-10 gap-10">
         <button className="bg-[#f5c042] rounded-[6px] py-2 font-poppins px-2 border-1 border-yello-500">
           Connect Wallet
         </button>
