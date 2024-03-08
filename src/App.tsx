@@ -1,5 +1,13 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import play from "../images/avatar/play.png"
+import image2 from "../images/image2.png"
+import image from "../images/image.png"
+import avatar1 from "../images/avatar/avatar1.png"
+import avatar2 from "../images/avatar/avatar2.png"
+import avatar3 from "../images/avatar/avatar3.png"
+import main_landing from "../images/main_landing.png"
+
 
 function App() {
   return (
@@ -26,7 +34,7 @@ function App() {
             <button className="flex gap-2 items-center">
               <img
                 className="scale-125"
-                src="./images/avatar/play.png"
+                src={play}
                 height={"40"}
                 width={"40"}
                 alt=""
@@ -39,13 +47,13 @@ function App() {
           </h2>
           <img
             className="absolute left-[590px]   scale-110 "
-            src="./images/image2.png"
+            src={image2}
           />
         </div>
         <div>
           <img
             className="hidden sm:visible md:block lg:block relative scale-[110%] mt-72 -z-20  lg:visible "
-            src="./images/main_landing.png"
+            src={main_landing}
           />
           <br />
           <div className="z-10 italic font-poppins_normal lg:botton-40 relative  right-48  flex  flex-col  text-xl items-center">
@@ -54,7 +62,7 @@ function App() {
                 <img
                   width={"80"}
                   height="80"
-                  src="./images/avatar/avatar1.png"
+                  src={avatar1}
                 />
                 Real Bestia Nft's
               </span>
@@ -62,21 +70,21 @@ function App() {
                 <img
                   width={"80"}
                   height="80"
-                  src="./images/avatar/avatar2.png"
+                  src={avatar2}
                 />
                 Maxima Manga Nft's
               </span>
             </div>
             <br />
             <span className="text-gray-500 flex items-center">
-              <img width={"80"} height="80" src="./images/avatar/avatar3.png" />
+              <img width={"80"} height="80" src={avatar3} />
               Prime Ape Planet (PAP) Nft's
             </span>
           </div>
         </div>
       </div>
       <div className="z-10 relative flex ml-9 scale-90">
-        <img className="absolute left-24 -top-14" src="./images/image.png" />
+        <img className="absolute left-24 -top-14" src={image} />
       </div>
     </>
   );
