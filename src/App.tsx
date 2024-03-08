@@ -14,10 +14,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="grid grid-cols-1 lg:flex h-[70vh] mx-10 lg:mx-20 lg:justify-center lg:gap-9 items-center ">
-        <div className=" text-left">
+      <div className="mx-10 lg:mx-0  flex lg:flex-row h-[70vh] lg:w-[100vw] w-[460px] lg:justify-center mt-20 gap-9 items-center ">
+        <div className="text-left">
           <motion.div initial={{x:-100,opacity:0}}
-          animate={{x:0,opacity:1}} className="text-5xl lg:text-7xl">
+          animate={{x:0,opacity:1}} className="text-7xl  lg:text-5xl">
             <span className="font-poppins_normal ">Discover</span>{" "}
             <span className="font-bold ">
               Digital <br /> Artwork & <br />
@@ -25,17 +25,23 @@ function App() {
             </span>
             <span className="text-gray-600 font-thin">Best NFTs</span>
           </motion.div>
-          <p className="my-6  text-gray-400 w-[430px]">
+          <motion.p 
+          initial={{x:-100,opacity:0}}
+          animate={{x:0,opacity:1}}
+          className="my-6 text-xl text-gray-400 w-[460px]">
             There is enough digital artworks available online to help you put
             together crypto currency website.
-          </p>
-          <div className="flex gap-10 font-poppins_bold">
-            <button className="bg-black rounded py-2 px-3 text-white">
+          </motion.p>
+          <motion.div
+          initial={{x:-100,opacity:0}}
+          animate={{x:0,opacity:1}}
+           className="flex gap-10 font-poppins_bold">
+            <button className="hover:scale-105 transition-all bg-black rounded lg:w-60 lg:h-14 lg:text-xl text-2xl w-60 h-20  py-2 px-3 text-white">
               Explore Now
             </button>
-            <button className="flex gap-2 items-center">
+            <button className="hover:scale-105 transition-all flex lg:gap-2 px-6 items-center lg:bg-none sm:border-2 sm:border-yellow-400 bg-yellow-300 rounded">
               <img
-                className="scale-125"
+                className="scale-150"
                 src={play}
                 height={"40"}
                 width={"40"}
@@ -43,12 +49,17 @@ function App() {
               />
               Watch Video
             </button>
-          </div>
+          </motion.div>
           <h2 className="font-[500] text-3xl  my-6 tracking-[0.6rem] ">
             Populer Artwork
           </h2>
-          <img
-            className="absolute left-[590px]   scale-110 "
+          <motion.img
+           initial={{opacity:0}}
+           animate={{opacity:1}}
+           transition={{
+            delay:0.1
+           }}
+            className="absolute  lg:visible lg:left-[500px]  lg:bottom-2 lg:rotate-0 -z-10 scale-[60%] "
             src={image2}
           />
         </div>
@@ -56,16 +67,16 @@ function App() {
           <motion.img 
           initial={{x:100,opacity:0}}
           animate={{x:0,opacity:1}}
-            className="hidden sm:visible md:block lg:block relative scale-[110%] mt-72 -z-20  lg:visible "
+            className="invisible  scale-100 lg:top-28 lg:h-[1000px] relative -z-20 lg:visible "
             src={main_landing}
           />
           <br />
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1}}
-          className="z-10 italic font-poppins_normal lg:botton-40 relative  right-48  flex  flex-col  text-xl items-center">
-            <div className="flex gap-8  border-b-2 border-t-2 py-4">
-              <span className="text-gray-500 flex items-center ">
+          className="z-20 italic font-poppins_normal   relative lg:relative lg:-top-32 lg:right-32  top-72 right-96 flex  flex-col  text-xl items-center">
+            <div className="flex gap-0 flex-col lg:flex-row lg:w-full w-[300px] justify-between items-start border-b-2 border-t-2 py-2">
+              <span className="text-gray-500 sm:border-b-2 lg:border-b-0 pb-2  flex  justify-start  items-center ">
                 <img
                   width={"80"}
                   height="80"
@@ -73,7 +84,7 @@ function App() {
                 />
                 Real Bestia Nft's
               </span>
-              <span className="font-bold flex items-center">
+              <span className="font-bold flex w-96  items-center">
                 <img
                   width={"80"}
                   height="80"
@@ -93,8 +104,8 @@ function App() {
       <motion.div 
       initial={{y:100,opacity:0}}
       animate={{y:0,opacity:1}}
-      className="z-10 relative flex ml-9 scale-90">
-        <img className="absolute left-24 -top-14" src={image} />
+      className="z-10 relative flex ml-9 scale-90 bottom-0 lg:bottom-20">
+        <img className="invisible lg:visible absolute left-24 top-14" src={image} />
       </motion.div>
     </>
   );
