@@ -6,7 +6,7 @@ export default function Navbar() {
           <li className="font-poppins_bold text-xl flex items-center gap-2  font-san">
             <img
               className="scale-125"
-              src="./public/avatar/logo.png"
+              src="./images/avatar/logo.png"
               height={"40"}
               width={"40"}
               alt=""
@@ -29,7 +29,7 @@ export default function Navbar() {
         </button>
         <img
           className=" scale-150"
-          src="./public/avatar/download.png"
+          src="./images/avatar/download.png"
           height={"40"}
           width={"40"}
           alt=""

@@ -26,7 +26,7 @@ function App() {
             <button className="flex gap-2 items-center">
               <img
                 className="scale-125"
-                src="./public/avatar/play.png"
+                src="./images/avatar/play.png"
                 height={"40"}
                 width={"40"}
                 alt=""
@@ -39,13 +39,13 @@ function App() {
           </h2>
           <img
             className="absolute left-[590px]   scale-110 "
-            src="./public/image2.png"
+            src="./images/image2.png"
           />
         </div>
         <div>
           <img
             className="hidden sm:visible md:block lg:block relative scale-[110%] mt-72 -z-20  lg:visible "
-            src="./public/main_landing.png"
+            src="./images/main_landing.png"
           />
           <br />
           <div className="z-10 italic font-poppins_normal lg:botton-40 relative  right-48  flex  flex-col  text-xl items-center">
@@ -54,7 +54,7 @@ function App() {
                 <img
                   width={"80"}
                   height="80"
-                  src="./public/avatar/avatar1.png"
+                  src="./images/avatar/avatar1.png"
                 />
                 Real Bestia Nft's
               </span>
@@ -62,21 +62,21 @@ function App() {
                 <img
                   width={"80"}
                   height="80"
-                  src="./public/avatar/avatar2.png"
+                  src="./images/avatar/avatar2.png"
                 />
                 Maxima Manga Nft's
               </span>
             </div>
             <br />
             <span className="text-gray-500 flex items-center">
-              <img width={"80"} height="80" src="./public/avatar/avatar3.png" />
+              <img width={"80"} height="80" src="./images/avatar/avatar3.png" />
               Prime Ape Planet (PAP) Nft's
             </span>
           </div>
         </div>
       </div>
       <div className="z-10 relative flex ml-9 scale-90">
-        <img className="absolute left-24 -top-14" src="./public/image.png" />
+        <img className="absolute left-24 -top-14" src="./images/image.png" />
       </div>
     </>
   );
