@@ -1,8 +1,14 @@
 import logo from "../../images/avatar/logo.png"
 import download from "../../images/avatar/download.png"
+
+import { motion } from "framer-motion";
+
 export default function Navbar() {
   return (
-    <nav className="invisible lg:visible md:visible flex items-center justify-between w-full px-44 py-6 text-md">
+    <motion.nav initial={{ y: -100,  opacity: 0 }}
+            animate={{ y: 0,opacity: 1 }}
+            
+            className="invisible lg:visible md:visible flex items-center justify-between w-full px-44 py-6 text-md">
       <div className="flex justify-start font-poppins_normal  invisible lg:visible ">
         <ul className="list-none flex gap-10  ">
 
@@ -38,6 +44,6 @@ export default function Navbar() {
           alt=""
         />
       </div>
-    </nav>
+    </motion.nav>
   );
 }

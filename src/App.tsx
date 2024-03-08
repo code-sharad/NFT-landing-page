@@ -7,6 +7,7 @@ import avatar1 from "../images/avatar/avatar1.png"
 import avatar2 from "../images/avatar/avatar2.png"
 import avatar3 from "../images/avatar/avatar3.png"
 import main_landing from "../images/main_landing.png"
+import { motion } from "framer-motion";
 
 
 function App() {
@@ -15,14 +16,15 @@ function App() {
       <Navbar />
       <div className="grid grid-cols-1 lg:flex h-[70vh] mx-10 lg:mx-20 lg:justify-center lg:gap-9 items-center ">
         <div className=" text-left">
-          <div className="text-5xl lg:text-7xl">
+          <motion.div initial={{x:-100,opacity:0}}
+          animate={{x:0,opacity:1}} className="text-5xl lg:text-7xl">
             <span className="font-poppins_normal ">Discover</span>{" "}
             <span className="font-bold ">
               Digital <br /> Artwork & <br />
               Collect{" "}
             </span>
             <span className="text-gray-600 font-thin">Best NFTs</span>
-          </div>
+          </motion.div>
           <p className="my-6  text-gray-400 w-[430px]">
             There is enough digital artworks available online to help you put
             together crypto currency website.
@@ -51,12 +53,17 @@ function App() {
           />
         </div>
         <div>
-          <img
+          <motion.img 
+          initial={{x:100,opacity:0}}
+          animate={{x:0,opacity:1}}
             className="hidden sm:visible md:block lg:block relative scale-[110%] mt-72 -z-20  lg:visible "
             src={main_landing}
           />
           <br />
-          <div className="z-10 italic font-poppins_normal lg:botton-40 relative  right-48  flex  flex-col  text-xl items-center">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          className="z-10 italic font-poppins_normal lg:botton-40 relative  right-48  flex  flex-col  text-xl items-center">
             <div className="flex gap-8  border-b-2 border-t-2 py-4">
               <span className="text-gray-500 flex items-center ">
                 <img
@@ -80,12 +87,15 @@ function App() {
               <img width={"80"} height="80" src={avatar3} />
               Prime Ape Planet (PAP) Nft's
             </span>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="z-10 relative flex ml-9 scale-90">
+      <motion.div 
+      initial={{y:100,opacity:0}}
+      animate={{y:0,opacity:1}}
+      className="z-10 relative flex ml-9 scale-90">
         <img className="absolute left-24 -top-14" src={image} />
-      </div>
+      </motion.div>
     </>
   );
 }
