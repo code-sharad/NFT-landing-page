@@ -39,7 +39,7 @@ function App() {
             <button className="hover:scale-105 transition-all bg-black rounded lg:w-60 lg:h-14 lg:text-xl text-[1.2rem] w-30 h-20  py-2 px-3 text-white">
               Explore Now
             </button>
-            <button className="hover:scale-105 transition-all flex lg:gap-2 px-6 items-center lg:bg-none sm:border-2 sm:border-yellow-400 bg-yellow-300 rounded">
+            <button className="hover:scale-105 transition-all w-[150px] flex lg:gap-2 px-4 items-center lg:bg-none sm:border-2 sm:border-yellow-400 bg-yellow-300 rounded">
               <img
                 className="scale-150"
                 src={play}

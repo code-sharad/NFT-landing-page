@@ -10,23 +10,9 @@ import clsx from "clsx";
 export default function Navbar() {
   const [isSideMenuOpen, setMenu] = useState(false);
 
-  // if(!isSideMenuOpen){
-  //   return <nav className="lg:invisible flex justify-between  py-6 text-md mx-9">
-  //     <li className="visible items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
-  //           <img
-  //             className="scale-125"
-  //             src={logo}
-  //             height={"40"}
-  //             width={"40"}
-  //             alt=""
-  //           />
-  //           NFT's{" "}
-  //         </li>
-     
-  //   </nav>
-  // }
+
   if(isSideMenuOpen){
-   return <div className="lg:invisible flex justify-between  py-6 text-md mx-9">
+   return <div className="lg:invisible flex justify-between   py-6 text-md mx-9">
        <li className="visible items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
             <img
               className="scale-125"
@@ -48,7 +34,7 @@ export default function Navbar() {
           <section className="text-black bg-white flex-col absolute left-0 top-0 h-screen p-8 gap-8 z-50 w-56 flex  ">
             <IoCloseOutline
               onClick={() => setMenu(false)}
-              className="mt-0 mb-8 text-3xl cursor-pointer"
+              className="mt-0 mb-8 text-3xl  cursor-pointer"
             />
             <ul className="list-none flex  flex-col gap-2 font-poppins_normal font-bold ">
               <li>Discover</li>
@@ -65,24 +51,27 @@ export default function Navbar() {
     <motion.nav initial={{ y: -100,  opacity: 0 }}
             animate={{ y: 0,opacity: 1 }}
             
-            className="lg:visible md:visible flex items-center justify-between w-[80vw] mx-[10vw] py-6 text-md">
+            className="lg:visible md:visible flex items-center justify-between w-[80vw] mx-[10vw]  py-6 text-md">
       <div className="flex justify-start  font-poppins_normal  invisible lg:visible ">
         <ul className="list-none flex gap items-center justify-between  lg:gap-10 gap-0 ">
 
-          <li className="visible  items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex cursor-pointer  gap-2  font-san">
-            <img
-              className="scale-125"
+          <li className="visible  py-9  items-center scale-125 lg:scale-100 font-poppins_bold text-xl flex justify-between  w-[87vw] cursor-pointer  gap-2  font-san">
+            <div className="flex items-center gap-2">
+              <img
+              className="scale-125 ml-2"
               src={logo}
               height={"40"}
               width={"40"}
               alt=""
-            />
-            NFT's{" "}
-          </li>
-           <FiMenu
+              />
+              NFT's{" "}
+            </div>
+              <FiMenu
               onClick={() => setMenu(true)}
-              className="text-3xl visible absolute right-8  cursor-pointer lg:hidden"
+              className="text-3xl visible sticky cursor-pointer lg:hidden"
             />
+          </li>
+           
           <li className="text-gray-500 cursor-pointer ">Discover</li>
           <li className="text-gray-500 cursor-pointer">How it works</li>
           <li className="font-poppins_bold cursor-pointer">
